@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>You Can Book Me!</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>You can book me!</h1>
+      <p>Enter your information below to book a meeting with me.</p>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="person">Name:</label>
+            <input id="person" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="date">Preferred date:</label>
+            <input id="date" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="time">Preferred time:</label>
+            <input id="time" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="reason">Reason for meeting:</label>
+            <input id="reason" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn-default btn-lg">Submit</button>
+        </form>
+      </div>
+      <div id="confirmation">
+        <h1>Meeting request submitted.</h1>
+        <p>Thank you, <span class="person"></span> for booking a meeting with me. Your proposal for a meeting on <span class="date"></span> at <span class="time"></span> to discuss <span class="reason"></span> has been submitted and is under board review. Proposal denied.</p>
+      </div>
+    </div>
+  </body>
+</html>
