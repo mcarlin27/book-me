@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  $("form").submit(function() {
+  $("form").submit(function(event) {
     var personInput = $("input#person").val();
     var dateInput = $("input#date").val();
     var timeInput = $("input#time").val();
-    var reasonInput = $("input#reason").val();
+    var reasonInput = $("input:radio[name=reason]:checked").val();
 
     $(".person").text(personInput);
     $(".date").text(dateInput);
@@ -13,6 +13,12 @@ $(document).ready(function() {
     $("#confirmation").show();
     $("form").hide();
 
+    var Result = "Proposal denied.";
+    setTimeout(function() {
+      alert(Result); }, 1000);
+
+
     event.preventDefault();
+
   });
 });
