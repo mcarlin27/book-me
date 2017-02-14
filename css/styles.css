@@ -1,3 +1,7 @@
 #confirmation {
   display: none;
 }
+
+.colorful-text {
+  color: favoriteColor
+}
