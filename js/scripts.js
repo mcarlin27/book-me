@@ -11,6 +11,7 @@ $(document).ready(function() {
     $(".reason").text(reasonInput);
 
     $("#confirmation").show();
+    $("form").hide();
 
     event.preventDefault();
   });
